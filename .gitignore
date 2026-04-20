@@ -1,0 +1,61 @@
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+dist/
+.eggs/
+*.egg-info/
+.venv/
+venv/
+env/
+ENV/
+
+# Tool caches and test artifacts
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Env and secrets
+.env
+.env.*
+*.pem
+*.key
+
+# Data files (keep folder structure only)
+data/raw/*
+!data/raw/.gitkeep
+data/processed/*
+!data/processed/.gitkeep
+
+# Exported models and binaries
+*.pkl
+*.joblib
+*.parquet
+
+# Logs
+*.log
+logs/
+
+# Tableau artifacts
+*.twbr
+*.tde
+*.hyper
+tableau/temp/
+
+# macOS Tableau lock/temp files
+~$*.twb
+~$*.twbx
