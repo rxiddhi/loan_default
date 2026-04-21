@@ -1,0 +1,13 @@
+metric_id,metric_name,category,definition,formula,owner,baseline,target_direction,target_value,review_frequency
+SM01,Default Rate,Portfolio Risk,Share of loans that default,defaults/total_loans,Risk Team,11.613%,Decrease,<=10.2%,Monthly
+SM02,Good Loan Retention,Portfolio Quality,Share of non-default borrowers retained in approvals,approved_non_default/total_non_default,Bank Manager,NA,Maintain,>=75%,Monthly
+SM03,High-Risk Approval Share,Underwriting Discipline,Share of approved loans flagged high risk,approved_high_risk/total_approved,Risk Team,NA,Decrease,<=18%,Monthly
+SM04,Top-Decile Default Concentration,Risk Concentration,Share of defaults captured in top predicted-risk decile,defaults_in_top_decile/total_defaults,Risk Analytics,NA,Increase,>=35%,Monthly
+SM05,Top-30pct Default Capture,Risk Prioritization,Share of defaults captured in top 30% risk pool,defaults_in_top30pct/total_defaults,Risk Analytics,NA,Increase,>=60%,Monthly
+SM06,AUC-ROC,Model Discrimination,Model ability to separate default vs non-default,roc_auc_score,Data Science,NA,Increase,>=0.75,Per release
+SM07,Default Recall,Model Risk Control,Share of actual defaults correctly flagged,true_positives/actual_defaults,Data Science,NA,Increase,>=0.70,Per release
+SM08,High-Risk Precision,Operational Efficiency,Share of flagged high-risk cases that actually default,true_positives/predicted_high_risk,Collections,NA,Increase,>=0.35,Per release
+SM09,KS Statistic,Model Separation,Max CDF separation between default and non-default distributions,ks(default_prob|class),Risk Analytics,NA,Increase,>=0.30,Per release
+SM10,Calibration Error,Model Reliability,Gap between predicted and observed default rates,mean_abs(pred_prob-observed),Data Science,NA,Decrease,<=0.03,Per release
+SM11,Policy Actions Implemented,Business Adoption,Count of implemented policy changes from analysis,count(policy_changes),Executives,0,Increase,>=3,Quarterly
+SM12,Dashboard Review Compliance,Governance,Share of scheduled stakeholder reviews completed,completed_reviews/scheduled_reviews,PMO,NA,Increase,>=90%,Monthly
