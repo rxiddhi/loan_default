@@ -1,0 +1,5 @@
+dashboard_id,dashboard_name,primary_goal,core_charts,primary_filters,screenshot_name
+DB01,Executive Summary,Portfolio health and risk concentration,KPI tiles + trend + segment bars,"LoanPurpose|EmploymentType|LoanTerm|CreditScoreBand",dashboard_01_executive_summary.png
+DB02,Customer Risk Segments,Identify high-risk borrower cohorts,Stacked bars + heatmap + scatter,"RiskBand|CreditScoreBand|DTIBand|HasCoSigner",dashboard_02_customer_risk_segments.png
+DB03,Loan Performance,Analyze product mix versus default risk,Treemap + clustered bar + exposure-risk matrix,"LoanPurpose|LoanTerm|InterestRateBucket|IncomeBand",dashboard_03_loan_performance.png
+DB04,Demographic Insights,Understand demographic effect on default,Stacked bars + boxplots + bubble map,"AgeBand|MaritalStatus|Education|HasDependents",dashboard_04_demographic_insights.png
