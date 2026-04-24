@@ -1,0 +1,21 @@
+kpi_id,kpi_name,category,definition,formula,owner,frequency
+KPI01,Total Loans,Volume,Total active portfolio records,count(LoanID),Business Head,Monthly
+KPI02,Default Rate %,Risk,Share of defaulted loans,sum(Default)/count(LoanID)*100,Risk Team,Monthly
+KPI03,Non-Default Rate %,Risk,Share of non-default loans,(count(LoanID)-sum(Default))/count(LoanID)*100,Risk Team,Monthly
+KPI04,Average Loan Size,Portfolio Quality,Average principal disbursed,avg(LoanAmount),Credit Ops,Monthly
+KPI05,Average Income,Portfolio Quality,Average borrower income,avg(Income),Credit Ops,Monthly
+KPI06,Income to Loan Ratio,Affordability,Repayment buffer proxy,avg(Income/LoanAmount),Risk Analytics,Monthly
+KPI07,High DTI Ratio %,Risk,Share of borrowers with DTI above 0.50,count(DTIRatio>0.50)/count(LoanID)*100,Risk Team,Monthly
+KPI08,Low Credit Score Ratio %,Risk,Share of borrowers with credit score below 580,count(CreditScore<580)/count(LoanID)*100,Risk Team,Monthly
+KPI09,Average Interest Rate,Pricing,Portfolio average price of risk,avg(InterestRate),Product Manager,Monthly
+KPI10,Average DTI,Risk Burden,Average debt-to-income burden,avg(DTIRatio),Risk Team,Monthly
+KPI11,Average Credit Score,Credit Quality,Average portfolio credit profile,avg(CreditScore),Risk Analytics,Monthly
+KPI12,Average Months Employed,Stability,Average employment tenure,avg(MonthsEmployed),Risk Team,Monthly
+KPI13,Co-signer Penetration %,Risk Mitigation,Share of loans with co-signer,count(HasCoSigner='Yes')/count(LoanID)*100,Collections,Monthly
+KPI14,Mortgage Holder Share %,Leverage Mix,Share of borrowers with mortgage,count(HasMortgage='Yes')/count(LoanID)*100,Risk Team,Monthly
+KPI15,Dependents Share %,Household Pressure,Share of borrowers with dependents,count(HasDependents='Yes')/count(LoanID)*100,Retail Portfolio Lead,Monthly
+KPI16,Highest Risk Loan Purpose Default %,Segment Risk,Highest default rate among loan-purpose segments,max(default_rate by LoanPurpose),Risk Analytics,Monthly
+KPI17,Highest Risk Employment Type Default %,Segment Risk,Highest default rate among employment segments,max(default_rate by EmploymentType),Risk Analytics,Monthly
+KPI18,Recovery Opportunity %,Collections,Defaulted loans with co-signer support,default_loans_with_cosigner/default_loans*100,Collections Team,Monthly
+KPI19,High Risk Ratio %,Early Warning,Share in high and very-high model risk bands,count(risk_band in High/Very High)/count(scored_loans)*100,Risk Analytics,Weekly
+KPI20,Top-30% Risk Default Capture %,Model Utility,Share of defaults captured in top 30% predicted risk,defaults_in_top30pct_risk/total_defaults*100,Risk Analytics,Monthly
