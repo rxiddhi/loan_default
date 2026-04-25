@@ -1,0 +1,21 @@
+chart_no,file,type,objective
+1,01_default_class_distribution.png,Univariate,Assess class imbalance in target
+2,02_age_distribution.png,Univariate,Age profile of borrowers
+3,03_income_distribution_log.png,Univariate,Income spread and skewness
+4,04_loanamount_distribution_log.png,Univariate,Loan amount spread and skewness
+5,05_creditscore_distribution.png,Univariate,Credit quality distribution
+6,06_dti_distribution.png,Univariate,Debt burden distribution
+7,07_interestrate_distribution.png,Univariate,Pricing distribution
+8,08_loanterm_frequency.png,Univariate,Term mix profile
+9,09_employmenttype_frequency.png,Univariate,Employment composition
+10,10_loanpurpose_frequency.png,Univariate,Purpose composition
+11,11_defaultrate_by_creditscoreband.png,Bivariate,Risk by credit bucket
+12,12_defaultrate_by_dtiband.png,Bivariate,Risk by DTI bucket
+13,13_defaultrate_by_loanpurpose.png,Bivariate,Risk by loan purpose
+14,14_defaultrate_by_employmenttype.png,Bivariate,Risk by employment type
+15,15_box_creditscore_by_default.png,Default Comparison,Credit score separation by target
+16,16_box_dti_by_default.png,Default Comparison,DTI separation by target
+17,17_box_logincome_by_default.png,Default Comparison,Income separation by target
+18,18_correlation_heatmap.png,Multivariate,Overall numeric dependency map
+19,19_scatter_dti_vs_creditscore_default.png,Multivariate,Joint risk surface by target
+20,20_defaultrate_by_risksegment.png,Multivariate,Composite risk segment performance
