@@ -52,7 +52,7 @@ Includes side-by-side means for:
 - MonthsEmployed
 
 Business use:
-- Supports viva-level narrative with concrete numeric separation between classes.
+- Supports presentation narrative with concrete numeric separation between classes.
 
 ## 5) Twenty Best Charts (Portfolio-Quality Set)
 Generated catalog:

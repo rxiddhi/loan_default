@@ -59,3 +59,7 @@ tableau/temp/
 # macOS Tableau lock/temp files
 ~$*.twb
 ~$*.twbx
+
+# Generated EDA artifacts (regenerate via scripts)
+reports/figures/phase_06/*.png
+reports/figures/phase_06/interactive/*.html
